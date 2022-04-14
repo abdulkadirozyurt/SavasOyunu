@@ -104,6 +104,7 @@
             this.Text = "Savaş Oyunu";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.AnaForm_KeyDown);
             this.bilgiPanel.ResumeLayout(false);
             this.bilgiPanel.PerformLayout();
             this.ResumeLayout(false);
