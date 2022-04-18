@@ -31,9 +31,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AnaForm));
             this.bilgiPanel = new System.Windows.Forms.Panel();
             this.bilgiLabel = new System.Windows.Forms.Label();
+            this.sureLabel = new System.Windows.Forms.Label();
             this.ucaksavarPanel = new System.Windows.Forms.Panel();
             this.savasAlaniPanel = new System.Windows.Forms.Panel();
-            this.sureLabel = new System.Windows.Forms.Label();
             this.bilgiPanel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -61,6 +61,18 @@
     "L yön tuşlarını kullanın.\r\nAteş etmek için BOŞLUK tuşuna basın.";
             this.bilgiLabel.Click += new System.EventHandler(this.label1_Click);
             // 
+            // sureLabel
+            // 
+            this.sureLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.sureLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.sureLabel.ForeColor = System.Drawing.Color.White;
+            this.sureLabel.Location = new System.Drawing.Point(720, 28);
+            this.sureLabel.Name = "sureLabel";
+            this.sureLabel.Size = new System.Drawing.Size(176, 63);
+            this.sureLabel.TabIndex = 1;
+            this.sureLabel.Text = "0:00";
+            this.sureLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
             // ucaksavarPanel
             // 
             this.ucaksavarPanel.BackColor = System.Drawing.Color.Teal;
@@ -78,18 +90,6 @@
             this.savasAlaniPanel.Name = "savasAlaniPanel";
             this.savasAlaniPanel.Size = new System.Drawing.Size(899, 505);
             this.savasAlaniPanel.TabIndex = 2;
-            // 
-            // sureLabel
-            // 
-            this.sureLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.sureLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.sureLabel.ForeColor = System.Drawing.Color.White;
-            this.sureLabel.Location = new System.Drawing.Point(720, 28);
-            this.sureLabel.Name = "sureLabel";
-            this.sureLabel.Size = new System.Drawing.Size(176, 63);
-            this.sureLabel.TabIndex = 1;
-            this.sureLabel.Text = "0:00";
-            this.sureLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // AnaForm
             // 

@@ -7,7 +7,7 @@ namespace Savas.Desktop
     public partial class AnaForm : Form
     {
 
-        private readonly Oyun _oyun=new Oyun();
+        private readonly Oyun _oyun = new Oyun();
 
 
 
@@ -19,6 +19,8 @@ namespace Savas.Desktop
         public AnaForm()
         {
             InitializeComponent();
+
+            _oyun.GecenSureDegisti += Oyun_GecenSureDegisti;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -35,13 +37,13 @@ namespace Savas.Desktop
         {
             switch (e.KeyCode)
             {
-                case Keys.Enter: 
+                case Keys.Enter:
                     _oyun.Baslat();
                     break;
-                case Keys.Right: 
+                case Keys.Right:
                     _oyun.UcakSavariHareketEttir(Library.Enum.Yon.Saga);
                     break;
-                case Keys.Left: 
+                case Keys.Left:
                     _oyun.UcakSavariHareketEttir(Library.Enum.Yon.Sola);
                     break;
                 case Keys.Space:
@@ -50,5 +52,11 @@ namespace Savas.Desktop
 
             }
         }
+
+        private void Oyun_GecenSureDegisti(object sender, EventArgs e)
+        {
+            sureLabel.Text =  _oyun.GecenSure.ToString(@"m\:ss");
+        }
+
     }
 }
